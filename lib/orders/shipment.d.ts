@@ -41,6 +41,10 @@ export declare class OrderLine {
     /**
      * A semantic wrapper for the list of OrderLine statuses.
      */
+    shipFromCountry: string;
+    /**
+     * A semantic wrapper for the list of OrderLine statuses.
+     */
     orderLineStatuses: OrderLineStatuses;
     constructor(orderline: OrderLine);
 }

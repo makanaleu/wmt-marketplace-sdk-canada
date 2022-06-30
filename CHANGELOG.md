@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2022-06-30, Version 1.4.1, @kmcconnell
+
+### Notable Changes
+
+Previous version was not compiled before publishing.
+
 ## 2022-06-30, Version 1.4.0, @kmcconnell
 
 ### Notable Changes
