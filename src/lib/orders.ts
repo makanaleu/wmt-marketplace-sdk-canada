@@ -64,7 +64,7 @@ export interface ShippingUpdateRequest extends Request.RequestHeaders {
  */
 export function getAllReleased(params: GetAllReleasedRequest): Request.Promise<any> {
   let requestParams: Request.RequestParams = {
-    BaseUrl: 'https://marketplace.walmartapis.com/v3/orders/released',
+    BaseUrl: 'https://marketplace.walmartapis.com/v3/ca/orders/released',
     Query: {
       createdStartDate: params.CreatedStartDate.toISOString(),
       createdEndDate: (params.CreatedEndDate || new Date()).toISOString(),
@@ -100,7 +100,7 @@ export function getAllReleased(params: GetAllReleasedRequest): Request.Promise<a
  */
 export function ackOrder(params: AcknowledgeOrderRequest): Request.Promise<any> {
   let requestParams: Request.RequestParams = {
-    BaseUrl: `https://marketplace.walmartapis.com/v3/orders/${params.PurchaseOrderId}/acknowledge`,
+    BaseUrl: `https://marketplace.walmartapis.com/v3/ca/orders/${params.PurchaseOrderId}/acknowledge`,
     Method: 'POST',
     Accept: params.Accept,
     ContentType: params.ContentType,
@@ -126,7 +126,7 @@ export function ackOrder(params: AcknowledgeOrderRequest): Request.Promise<any> 
  */
 export function postShippingUpdate(params: ShippingUpdateRequest): Request.Promise<any> {
   let requestParams: Request.RequestParams = {
-    BaseUrl: `https://marketplace.walmartapis.com/v3/orders/${params.PurchaseOrderId}/shipping`,
+    BaseUrl: `https://marketplace.walmartapis.com/v3/ca/orders/${params.PurchaseOrderId}/shipping`,
     Method: 'POST',
     Body: JSON.stringify(params.PurchaseOrderShipment),
     Accept: params.Accept,

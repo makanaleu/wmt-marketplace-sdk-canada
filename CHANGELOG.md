@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2022-07-04, Version 1.4.2, @kmcconnell
+
+### Notable Changes
+
+- orders:
+  - Added /ca/ to API paths.
+
 ## 2022-06-30, Version 1.4.1, @kmcconnell
 
 ### Notable Changes
