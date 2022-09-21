@@ -1,6 +1,6 @@
 {
   "name": "wmt-marketplace-sdk-canada",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Walmart Marketplace API SDK (Canada Marketplace)",
   "main": "index.js",
   "directories": {
