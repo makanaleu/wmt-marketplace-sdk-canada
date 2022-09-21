@@ -1,4 +1,4 @@
-import { Authenticate } from 'wmt-marketplace-auth';
+import { Authenticate } from 'wmt-marketplace-auth-canada';
 import * as Config from './config';
 import * as WMTError from './error';
 import * as Promise from 'bluebird';
