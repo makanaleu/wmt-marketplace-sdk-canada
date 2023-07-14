@@ -82,6 +82,18 @@ export class OrderLineStatuses {
 }
 
 /**
+ * Once the shipment is done, to update tracking details in the PO,
+ * you must pass the tracking number to be updated under the new 
+ * currentTrackingInfo field.
+ */
+export class CurrentTrackingInfo {
+  /**
+   * The shipment tracking number
+   */
+  trackingNumber: string;
+}
+
+/**
  * Details about the OrderLine status.
  */
 export class OrderLineStatus {
@@ -97,10 +109,17 @@ export class OrderLineStatus {
    * Information about the package shipment and tracking updates.
    */
   trackingInfo: OrderLineTrackingInfo;
+  /**
+   * Once the shipment is done, to update tracking details in the PO,
+   * you must pass the tracking number to be updated under the new 
+   * currentTrackingInfo field.
+   */
+  currentTrackingInfo: CurrentTrackingInfo;
 
   constructor(ols: OrderLineStatus) {
     this.status = ols.status;
     this.statusQuantity = ols.statusQuantity;
     this.trackingInfo = ols.trackingInfo;
+    this.currentTrackingInfo = ols.currentTrackingInfo;
   }
 }

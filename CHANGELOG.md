@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 2023-07-14, Version 1.4.4, @kmcconnell
+
+### Notable Changes
+
+- shipment:
+  - Added currentTrackingInfo property.
+
+## 2022-09-22, Version 1.4.3, @kmcconnell
+
+### Notable Changes
+
+- auth:
+  - Created Canada version of auth.ts.
+
 ## 2022-07-04, Version 1.4.2, @kmcconnell
 
 ### Notable Changes
